@@ -18,7 +18,10 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Entity
+@Document
 public class Patient {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

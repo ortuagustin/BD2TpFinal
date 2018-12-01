@@ -7,7 +7,10 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Entity
+@Document
 @SuppressWarnings("unused")
 public class Genotype {
   @Id

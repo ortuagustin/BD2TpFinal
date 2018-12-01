@@ -11,7 +11,10 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.validation.constraints.NotEmpty;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Entity
+@Document
 public class CategoricPhenotype extends Phenotype {
   @ElementCollection
   @NotEmpty

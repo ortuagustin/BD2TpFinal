@@ -11,7 +11,10 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotEmpty;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Entity
+@Document
 public class Pathology {
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

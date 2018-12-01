@@ -5,7 +5,10 @@ import java.util.Collection;
 
 import javax.persistence.Entity;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Entity
+@Document
 public class NumericPhenotype extends Phenotype {
   public static final class NumericPhenotypeBuilder {
 		private String name;

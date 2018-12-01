@@ -18,7 +18,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotEmpty;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Entity
+@Document
 @SuppressWarnings("unused")
 public class Analysis {
 	@Id

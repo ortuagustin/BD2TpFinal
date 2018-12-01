@@ -11,9 +11,11 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
+@Document
 @Table(
         uniqueConstraints=
             @UniqueConstraint(columnNames={"username"})

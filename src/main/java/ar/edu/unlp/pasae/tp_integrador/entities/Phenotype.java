@@ -11,7 +11,10 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.validation.constraints.NotEmpty;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Entity
+@Document
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "PHENOTYPE_KIND")
 public abstract class Phenotype {

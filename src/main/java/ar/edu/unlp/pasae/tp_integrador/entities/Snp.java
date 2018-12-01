@@ -5,7 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 @Entity
+@Document
 public class Snp {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
